@@ -1,0 +1,201 @@
+ <!doctype html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Portfolio</title>
+     <meta name="description" content="Personal portfolio" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+     <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+     <a class="skip-link" href="#main">Skip to content</a>
+     <header class="site-header" id="top">
+       <div class="container header-inner">
+         <a class="brand" href="#top" aria-label="Home">
+           <span class="logo">∎</span>
+           <span class="brand-text">Parth Viradiya</span>
+         </a>
+         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+         </button>
+         <nav class="nav" id="nav-menu">
+           <ul>
+             <li><a href="#about">About</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+         </nav>
+       </div>
+     </header>
+ 
+     <main id="main">
+       <section class="hero" id="hero">
+         <div class="container hero-grid">
+           <div class="hero-copy">
+             <p class="eyebrow">Hello, I'm</p>
+             <h1 class="headline"><span class="gradient">Parth Viradiya</span></h1>
+             <p class="subhead">Data Scientist</p>
+             <div class="cta">
+               <a class="btn primary" href="#projects">View Projects</a>
+             </div>
+             <div class="contact-row">
+               <a class="contact-item" href="mailto:parthvir64@gmail.com?subject=Hello%20Parth%20Viradiya&body=Hi%20Parth%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0A">
+                 <span class="icon" aria-hidden="true">
+                   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-.25a.75.75 0 0 0-.75.75v.26l8 5.04 8-5.04V7.25a.75.75 0 0 0-.75-.75H4.75Zm15.5 3.27-7.5 4.73a.75.75 0 0 1-.8 0L4.5 9.77v7.48c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V9.77Z"/></svg>
+                 </span>
+                 <span>parthvir64@gmail.com</span>
+               </a>
+               <a class="contact-item" href="tel:+917600514488">
+                 <span class="icon" aria-hidden="true">
+                   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C11.07 21 3 12.93 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.28.19 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
+                 </span>
+                 <span>+91 7600514488</span>
+               </a>
+             </div>
+           </div>
+           <div class="hero-photo"><img src="assets/avatar.jpg" alt="Parth Viradiya portrait" /></div>
+         </div>
+       </section>
+ 
+       <section class="section" id="about">
+         <div class="container grid two">
+           <div>
+             <h2>About</h2>
+             <p>
+               I build fast, accessible, and delightful web experiences. I care deeply about clean code, thoughtful design, and measurable impact.
+             </p>
+             <p>
+               I'm currently open to new opportunities. If you have a role that aligns, let's talk.
+             </p>
+             <div class="links">
+               <a class="text-link" href="mailto:parthvir64@gmail.com?subject=Hello%20Parth%20Viradiya&body=Hi%20Parth%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0A">Email</a>
+               <a class="text-link" href="https://www.linkedin.com/in/parth-viradiya-554360250" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+               <a class="text-link" href="#" target="_blank" rel="noreferrer noopener">GitHub</a>
+             </div>
+           </div>
+           <div class="about-card">
+             <!-- photo moved to hero -->
+             <ul class="highlights">
+               <li>5+ years building web apps</li>
+               <li>Performance focused (LCP < 2s)</li>
+               <li>Accessibility first (WCAG AA)</li>
+             </ul>
+           </div>
+         </div>
+       </section>
+ 
+       <section class="section" id="projects">
+         <div class="container">
+           <h2>Projects</h2>
+           <div class="projects-grid">
+             <article class="card">
+               <div class="card-media" role="img" aria-label="Project cover"></div>
+               <div class="card-body">
+                 <h3>Project One</h3>
+                 <p>Responsive dashboard with charts and real‑time data.</p>
+                 <ul class="tags">
+                   <li>React</li>
+                   <li>TypeScript</li>
+                   <li>WebSockets</li>
+                 </ul>
+                 <div class="card-actions">
+                   <a class="text-link" href="#" target="_blank" rel="noreferrer noopener">Live</a>
+                   <a class="text-link" href="#" target="_blank" rel="noreferrer noopener">Code</a>
+                 </div>
+               </div>
+             </article>
+             <article class="card">
+               <div class="card-media" role="img" aria-label="Project cover"></div>
+               <div class="card-body">
+                 <h3>Project Two</h3>
+                 <p>Design system and component library for internal apps.</p>
+                 <ul class="tags">
+                   <li>Storybook</li>
+                   <li>SCSS</li>
+                   <li>A11y</li>
+                 </ul>
+                 <div class="card-actions">
+                   <a class="text-link" href="#" target="_blank" rel="noreferrer noopener">Live</a>
+                   <a class="text-link" href="#" target="_blank" rel="noreferrer noopener">Code</a>
+                 </div>
+               </div>
+             </article>
+             <article class="card">
+               <div class="card-media" role="img" aria-label="Project cover"></div>
+               <div class="card-body">
+                 <h3>Project Three</h3>
+                 <p>Marketing site with animations and blazing performance.</p>
+                 <ul class="tags">
+                   <li>HTML</li>
+                   <li>CSS</li>
+                   <li>GSAP</li>
+                 </ul>
+                 <div class="card-actions">
+                   <a class="text-link" href="#" target="_blank" rel="noreferrer noopener">Live</a>
+                   <a class="text-link" href="#" target="_blank" rel="noreferrer noopener">Code</a>
+                 </div>
+               </div>
+             </article>
+           </div>
+         </div>
+       </section>
+ 
+       <section class="section" id="skills">
+         <div class="container">
+           <h2>Skills</h2>
+           <ul class="skills">
+             <li>JavaScript</li>
+             <li>TypeScript</li>
+             <li>React</li>
+             <li>Node.js</li>
+             <li>HTML</li>
+             <li>CSS</li>
+             <li>Tailwind</li>
+             <li>Figma</li>
+             <li>Testing</li>
+             <li>Performance</li>
+           </ul>
+         </div>
+       </section>
+ 
+       <section class="section" id="contact">
+         <div class="container">
+           <h2>Contact</h2>
+           <p>Have an opportunity or just want to say hi? I'd love to hear from you.</p>
+           <div class="cta">
+             <a class="btn" href="https://www.linkedin.com/in/parth-viradiya-554360250" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+           </div>
+           <div class="contact-row">
+             <a class="contact-item" href="mailto:parthvir64@gmail.com?subject=Hello%20Parth%20Viradiya&body=Hi%20Parth%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0A">
+               <span class="icon" aria-hidden="true">
+                 <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-.25a.75.75 0 0 0-.75.75v.26l8 5.04 8-5.04V7.25a.75.75 0 0 0-.75-.75H4.75Zm15.5 3.27-7.5 4.73a.75.75 0 0 1-.8 0L4.5 9.77v7.48c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V9.77Z"/></svg>
+               </span>
+               <span>parthvir64@gmail.com</span>
+             </a>
+             <a class="contact-item" href="tel:+917600514488">
+               <span class="icon" aria-hidden="true">
+                 <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C11.07 21 3 12.93 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.28.19 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
+               </span>
+               <span>+91 7600514488</span>
+             </a>
+           </div>
+         </div>
+       </section>
+     </main>
+ 
+     <footer class="site-footer">
+       <div class="container">
+         <p>© <span id="year"></span> Parth Viradiya. All rights reserved.</p>
+       </div>
+     </footer>
+ 
+     <script src="script.js"></script>
+   </body>
+ </html>
+
