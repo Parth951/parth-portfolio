@@ -23,8 +23,8 @@
    });
  });
  
- // Observe sections to set active nav link
- const sectionIds = ['#about', '#projects', '#skills', '#contact'];
+   // Observe sections to set active nav link
+  const sectionIds = ['#about', '#projects', '#skills', '#contact'];
  const observer = new IntersectionObserver((entries) => {
    entries.forEach((entry) => {
      const id = '#' + entry.target.id;
@@ -47,4 +47,21 @@
  if (yearEl) {
    yearEl.textContent = String(new Date().getFullYear());
  }
+
+// Lazy-load Three.js background when hero enters viewport
+(function(){
+  const target = document.getElementById('hero');
+  if(!target) return;
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(async (e)=>{
+      if(e.isIntersecting){
+        try { await import('./three-hero.js'); } catch(_) {}
+        io.disconnect();
+      }
+    });
+  }, { rootMargin: '200px 0px' });
+  io.observe(target);
+})();
+
+
 
