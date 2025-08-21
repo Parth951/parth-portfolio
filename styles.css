@@ -369,7 +369,7 @@
   .edu-list { 
     display: grid; 
     gap: 16px; 
-    margin: 0 20px;
+    margin: 0 20px; /* align with other sections' horizontal padding */
   }
   
   .edu-item { 
@@ -409,7 +409,7 @@
   /* Mobile responsiveness for Education section */
   @media (max-width: 700px) {
     .edu-list {
-      margin: 0 10px;
+      margin: 0 10px 0 12px;
     }
     
     .edu-item {
@@ -439,7 +439,7 @@
 
   @media (max-width: 480px) {
     .edu-list {
-      margin: 0 5px;
+      margin: 0 5px 0 7px;
     }
     
     .edu-item {
