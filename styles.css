@@ -366,19 +366,57 @@
   .github-link:hover { text-decoration: underline; }
 
   /* Education */
-  .edu-list { display: grid; gap: 16px; }
-  .edu-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); display: flex; align-items: baseline; gap: 12px; }
-  .edu-item h3 { margin: 0; font-size: 16px; white-space: nowrap; }
-  .edu-item h3::after { content: ', '; color: var(--muted); margin: 0 6px; }
-  .edu-item .meta { color: var(--muted); margin: 0; font-size: 14px; }
+  .edu-list { 
+    display: grid; 
+    gap: 16px; 
+    margin: 0 20px;
+  }
+  
+  .edu-item { 
+    background: var(--surface); 
+    border: 1px solid var(--border); 
+    border-radius: var(--radius); 
+    padding: 16px 20px; 
+    box-shadow: var(--shadow); 
+    display: flex; 
+    align-items: baseline; 
+    gap: 12px; 
+    overflow: hidden;
+  }
+  
+  .edu-item h3 { 
+    margin: 0; 
+    font-size: 16px; 
+    white-space: nowrap; 
+    flex-shrink: 0;
+  }
+  
+  .edu-item h3::after { 
+    content: ', '; 
+    color: var(--muted); 
+    margin: 0 6px; 
+  }
+  
+  .edu-item .meta { 
+    color: var(--muted); 
+    margin: 0; 
+    font-size: 14px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
   /* Mobile responsiveness for Education section */
   @media (max-width: 700px) {
+    .edu-list {
+      margin: 0 10px;
+    }
+    
     .edu-item {
       flex-direction: column;
       align-items: flex-start;
       gap: 8px;
-      padding: 14px;
+      padding: 14px 16px;
     }
     
     .edu-item h3 {
@@ -394,12 +432,18 @@
     .edu-item .meta {
       font-size: 13px;
       line-height: 1.4;
+      white-space: normal;
+      overflow: visible;
     }
   }
 
   @media (max-width: 480px) {
+    .edu-list {
+      margin: 0 5px;
+    }
+    
     .edu-item {
-      padding: 12px;
+      padding: 12px 14px;
       gap: 6px;
     }
     
