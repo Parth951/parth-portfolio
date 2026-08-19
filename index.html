@@ -1,255 +1,577 @@
-﻿ <!doctype html>
- <html lang="en">
-   <head>
-     <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <title>Portfolio</title>
-     <meta name="description" content="Personal portfolio" />
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-     <link rel="stylesheet" href="styles.css" />
-   </head>
-   <body>
-     <a class="skip-link" href="#main">Skip to content</a>
-     <header class="site-header" id="top">
-       <div class="container header-inner">
-         <a class="brand" href="#top" aria-label="Home">
-           <span class="logo"></span>
-           <span class="brand-text">Parth Viradiya</span>
-         </a>
-         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-           <span class="bar"></span>
-           <span class="bar"></span>
-           <span class="bar"></span>
-         </button>
-                   <nav class="nav" id="nav-menu">
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-       </div>
-     </header>
- 
-     <main id="main">
-       <section class="hero" id="hero">
-         <div id="hero-3d" aria-hidden="true"></div>
-         <div class="container hero-grid">
-           <div class="hero-copy">
-             <p class="eyebrow">Hello, I'm</p>
-             <h1 class="headline"><span class="gradient">Parth Viradiya</span></h1>
-             <p class="subhead">Data Scientist</p>
-             <div class="cta">
-               <a class="btn primary" href="#projects">View Projects</a>
-             </div>
-             <div class="contact-row">
-               <a class="contact-item" href="mailto:parthvir64@gmail.com?subject=Hello%20Parth%20Viradiya&body=Hi%20Parth%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0A">
-                 <span class="icon" aria-hidden="true">
-                   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-.25a.75.75 0 0 0-.75.75v.26l8 5.04 8-5.04V7.25a.75.75 0 0 0-.75-.75H4.75Zm15.5 3.27-7.5 4.73a.75.75 0 0 1-.8 0L4.5 9.77v7.48c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V9.77Z"/></svg>
-                 </span>
-                 <span>parthvir64@gmail.com</span>
-               </a>
-               <a class="contact-item" href="tel:+917600514488">
-                 <span class="icon" aria-hidden="true">
-                   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C11.07 21 3 12.93 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.28.19 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
-                 </span>
-                 <span>+91 7600514488</span>
-               </a>
-             </div>
-           </div>
-           <div class="hero-photo"><img src="avatar.jpg" alt="Parth Viradiya portrait" /></div>
-         </div>
-       </section>
- 
-       <section class="section" id="about">
-         <div class="container grid two">
-                       <div>
-              <h2>About</h2>
-              <p>
-                I am a dedicated Data Scientist with expertise in machine learning, data analysis, and statistical modeling. My technical skills include Python, R, SQL, TensorFlow, PyTorch, and visualization tools like Tableau and Power BI. I have hands-on experience in predictive analytics, NLP, computer vision, and recommendation systems. Driven by continuous learning, I actively participate in Kaggle competitions and stay updated with emerging AI technologies. I'm passionate about creating data-driven solutions that deliver meaningful impact for businesses and society.
-              </p>
-            </div>
-            <div class="about-card">
-              <ul class="highlights">
-                <li>Machine Learning & AI Expertise</li>
-                <li>Predictive Analytics & NLP</li>
-                <li>Data Visualization & BI Tools</li>
-                <li>Statistical Modeling & Analysis</li>
-                <li>Computer Vision Applications</li>
-                <li>Recommendation Systems</li>
-              </ul>
-            </div>
-         </div>
-       </section>
- 
-       <section class="section" id="projects">
-         <div class="container">
-           <h2>Projects</h2>
-           <div class="projects-grid">
-             <article class="card">
-               <div class="card-media" role="img" aria-label="Project cover">
-                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center" alt="Machine Learning Project" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-               </div>
-               <div class="card-body">
-                 <h3>Loan Approval Prediction</h3>
-                 <p>Flask web application that predicts loan approval using machine learning. Features PyTorch inference model with preprocessing pipeline and confidence scoring.</p>
-                 <ul class="tags">
-                   <li>Python</li>
-                   <li>Flask</li>
-                   <li>PyTorch</li>
-                   <li>Machine Learning</li>
-                   <li>scikit-learn</li>
-                 </ul>
-                 <div class="project-links">
-                   <a href="https://github.com/Parth951/loan-approval-prediction" target="_blank" rel="noreferrer noopener" class="github-link">View on GitHub</a>
-                 </div>
-               </div>
-             </article>
-             <article class="card">
-               <div class="card-media" role="img" aria-label="Project cover">
-                 <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center" alt="Rainfall Analysis Project" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-               </div>
-               <div class="card-body">
-                 <h3>Rainfall Trends in India Analysis</h3>
-                 <p>Comprehensive analysis of rainfall patterns across India from 1901-2015 using Python. Features data visualization, statistical analysis, and trend identification with interactive charts.</p>
-                 <ul class="tags">
-                   <li>Python</li>
-                   <li>Data Analysis</li>
-                   <li>Pandas</li>
-                   <li>Matplotlib</li>
-                   <li>Statistical Analysis</li>
-                 </ul>
-                 <div class="project-links">
-                   <a href="https://github.com/Parth951" target="_blank" rel="noreferrer noopener" class="github-link">View on GitHub</a>
-                 </div>
-               </div>
-             </article>
-             <article class="card">
-               <div class="card-media" role="img" aria-label="Project cover"></div>
-               <div class="card-body">
-                 <h3>Project Three</h3>
-                 <p>Marketing site with animations and blazing performance.</p>
-                 <ul class="tags">
-                   <li>HTML</li>
-                   <li>CSS</li>
-                   <li>GSAP</li>
-                 </ul>
-               </div>
-             </article>
-           </div>
-         </div>
-               </section>
+﻿<!doctype html>
+<html lang="en">
 
-        <section class="section" id="skills">
-          <div class="container">
-            <h2>Skills</h2>
-            <h3 class="skills-subtitle">Technical Skills</h3>
-                                    <div class="skills-marquee">
-              <div class="skills-content">
-                <span class="skill-badge" data-icon="globe">HTML</span>
-                <span class="skill-badge" data-icon="palette">CSS</span>
-                <span class="skill-badge" data-icon="gear">C</span>
-                <span class="skill-badge" data-icon="snake">Python</span>
-                <span class="skill-badge" data-icon="db">Database</span>
-                <span class="skill-badge" data-icon="chart">Data Analytics</span>
-                <span class="skill-badge" data-icon="robot">Machine Learning</span>
-                <span class="skill-badge" data-icon="brain">Artificial Intelligence</span>
-                <span class="skill-badge" data-icon="globe">HTML</span>
-                <span class="skill-badge" data-icon="palette">CSS</span>
-                <span class="skill-badge" data-icon="gear">C</span>
-                <span class="skill-badge" data-icon="snake">Python</span>
-                <span class="skill-badge" data-icon="db">Database</span>
-                <span class="skill-badge" data-icon="chart">Data Analytics</span>
-                <span class="skill-badge" data-icon="robot">Machine Learning</span>
-                <span class="skill-badge" data-icon="brain">Artificial Intelligence</span>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parth Viradiya — Data Analyst</title>
+  <meta name="description"
+    content="Parth Viradiya — Data Analyst specialising in Python, SQL, Machine Learning, and data visualisation. Turning raw data into actionable insights." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="logo">PV</span>
+        <span class="brand-text"><span>parth</span>.viradiya</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav" id="nav-menu">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ── Hero ─────────────────────────────────────────── -->
+    <section class="hero" id="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1 class="headline"><span class="gradient">Parth Viradiya</span></h1>
+            <p class="role-tag" id="role-tag">
+              <span>Data Analyst</span>
+            </p>
+            <p class="subhead">
+              Transforming raw data into clear, actionable insights. Passionate about building ML pipelines, interactive
+              dashboards, and statistical models that drive real business decisions.
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn secondary" href="#contact">Get in Touch</a>
+            </div>
+            <div class="contact-row">
+              <a class="contact-item"
+                href="mailto:parthvir64@gmail.com?subject=Hello%20Parth%20Viradiya&body=Hi%20Parth%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0A">
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-.25a.75.75 0 0 0-.75.75v.26l8 5.04 8-5.04V7.25a.75.75 0 0 0-.75-.75H4.75Zm15.5 3.27-7.5 4.73a.75.75 0 0 1-.8 0L4.5 9.77v7.48c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V9.77Z" />
+                  </svg>
+                </span>
+                <span>parthvir64@gmail.com</span>
+              </a>
+              <a class="contact-item" href="tel:+917600514488">
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C11.07 21 3 12.93 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.28.19 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z" />
+                  </svg>
+                </span>
+                <span>+91 7600514488</span>
+              </a>
+            </div>
+          </div>
+          <!-- Photo -->
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-ring" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="avatar.jpg" alt="Parth Viradiya" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="stats-bar" aria-label="Key statistics">
+          <div class="stat-item">
+            <div class="stat-value" data-count="6" data-suffix=" Mos">0 Mos</div>
+            <div class="stat-label">Internship Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-count="5" data-suffix="+">0+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-count="7" data-suffix="+">0+</div>
+            <div class="stat-label">Tools &amp; Libraries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-count="95" data-suffix="%">0%</div>
+            <div class="stat-label">Accuracy Achieved</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About ─────────────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <span class="tag">profile.json</span>
+          <span class="section-line"></span>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a dedicated <strong>Data Analyst</strong> with a strong foundation in machine learning, statistical
+              modelling, and data-driven decision-making. My technical toolkit includes Python, R, SQL, TensorFlow,
+              PyTorch, and visualisation platforms like Tableau and Power BI.
+            </p>
+            <p>
+              I have hands-on experience building predictive analytics pipelines, NLP models, computer vision
+              applications, and recommendation systems. I am passionate about Kaggle competitions and stay current with
+              emerging AI research.
+            </p>
+            <p>
+              My goal is to bridge the gap between complex data and meaningful business outcomes — turning messy
+              datasets into clean, actionable intelligence.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-title">core_competencies</div>
+            <ul class="highlights">
+              <li>Machine Learning &amp; AI Model Development</li>
+              <li>Predictive Analytics &amp; Statistical Modelling</li>
+              <li>Interactive Dashboards &amp; BI Tools</li>
+              <li>Data Wrangling with Pandas &amp; SQL</li>
+              <li>Computer Vision &amp; NLP</li>
+              <li>Kaggle Competitions &amp; Research</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects ──────────────────────────────────────── -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <span class="tag">featured</span>
+          <span class="section-line"></span>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&crop=center"
+                alt="Loan Approval ML Model" />
+              <span class="card-badge">ML · Python</span>
+            </div>
+            <div class="card-body">
+              <h3>Loan Approval Prediction</h3>
+              <p>Flask web application predicting loan approval using a PyTorch neural network. Features a complete
+                preprocessing pipeline, confidence scoring, and an interactive UI for real-time predictions.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>PyTorch</li>
+                <li>scikit-learn</li>
+                <li>ML</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Parth951/loan-approval-prediction" target="_blank" rel="noreferrer noopener"
+                  class="github-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  View on GitHub
+                </a>
               </div>
             </div>
-            <h3 class="skills-subtitle">Soft Skills</h3>
-            <div class="skills-marquee">
-              <div class="skills-content">
-                <span class="skill-badge" data-icon="speak">Communication</span>
-                <span class="skill-badge" data-icon="puzzle">Problem Solving</span>
-                <span class="skill-badge" data-icon="handshake">Teamwork</span>
-                <span class="skill-badge" data-icon="target">Leadership</span>
-                <span class="skill-badge" data-icon="brain">Critical Thinking</span>
-                <span class="skill-badge" data-icon="arrows">Adaptability</span>
-                <span class="skill-badge" data-icon="stopwatch">Time Management</span>
-                <span class="skill-badge" data-icon="megaphone">Presentation</span>
-                <span class="skill-badge" data-icon="speak">Communication</span>
-                <span class="skill-badge" data-icon="puzzle">Problem Solving</span>
-                <span class="skill-badge" data-icon="handshake">Teamwork</span>
-                <span class="skill-badge" data-icon="target">Leadership</span>
-                <span class="skill-badge" data-icon="brain">Critical Thinking</span>
-                <span class="skill-badge" data-icon="arrows">Adaptability</span>
-                <span class="skill-badge" data-icon="stopwatch">Time Management</span>
-                <span class="skill-badge" data-icon="megaphone">Presentation</span>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop&crop=center"
+                alt="Rainfall Analysis India" />
+              <span class="card-badge">EDA · Pandas</span>
+            </div>
+            <div class="card-body">
+              <h3>Rainfall Trends in India Analysis</h3>
+              <p>Comprehensive EDA of India's rainfall data (1901–2015) using Pandas and Matplotlib. Identifies
+                long-term trends, seasonal patterns, and regional anomalies through interactive visualisations.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>EDA</li>
+                <li>Statistics</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Parth951" target="_blank" rel="noreferrer noopener" class="github-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 — Airbnb -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1529408632839-a54952c491e5?w=500&h=300&fit=crop&crop=center"
+                alt="Airbnb Data Analysis" />
+              <span class="card-badge">EDA · SQL</span>
+            </div>
+            <div class="card-body">
+              <h3>Airbnb Data Analysis</h3>
+              <p>In-depth analysis of Airbnb listings to uncover pricing strategies, occupancy trends, and host
+                behaviour patterns. Includes geospatial visualisations and actionable business recommendations.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Seaborn</li>
+                <li>Geospatial</li>
+                <li>Business Analytics</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Parth951" target="_blank" rel="noreferrer noopener" class="github-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Skills ────────────────────────────────────────── -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <span class="tag">tech_stack.py</span>
+          <span class="section-line"></span>
+        </div>
+        <div class="skills-layout">
+
+          <!-- Left: Tools Grid -->
+          <div>
+            <p class="skills-subtitle">// tools &amp; libraries</p>
+            <div class="tools-grid">
+              <div class="tool-card">
+                <div class="tool-icon">🐍</div>
+                <div class="tool-name">Python</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">🗃️</div>
+                <div class="tool-name">SQL</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">📊</div>
+                <div class="tool-name">Pandas</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">🔢</div>
+                <div class="tool-name">NumPy</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">📈</div>
+                <div class="tool-name">Matplotlib</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">🎨</div>
+                <div class="tool-name">Seaborn</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">🤖</div>
+                <div class="tool-name">scikit-learn</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">🔥</div>
+                <div class="tool-name">PyTorch</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">🧠</div>
+                <div class="tool-name">TensorFlow</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">📉</div>
+                <div class="tool-name">Power BI</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">📋</div>
+                <div class="tool-name">Tableau</div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon">☁️</div>
+                <div class="tool-name">Jupyter</div>
               </div>
             </div>
           </div>
-        </section>       <section class="section" id="education">
-         <div class="container">
-           <h2>Education</h2>
-           <div class="edu-list">
-             <article class="edu-item">
-               <h3>10th</h3>
-               <p class="meta">2020  Shri Swaminarayan Gurukul, Memnagar, Ahmedabad.</p>
-             </article>
-             <article class="edu-item">
-               <h3>12th</h3>
-               <p class="meta">2022  Shri Swaminarayan Gurukul, Sarangpur, Botad.</p>
-             </article>
-             <article class="edu-item">
-               <h3>B.E. (Computer Engineering)</h3>
-               <p class="meta">2026  LDRP Institute of Engineering, Gandhinagar.</p>
-             </article>
-           </div>
-         </div>
-       </section>
 
+          <!-- Right: Proficiency Bars -->
+          <div>
+            <p class="skills-subtitle">// proficiency</p>
+            <div class="prof-list">
+              <div class="prof-item">
+                <div class="prof-header">
+                  <span class="prof-name">Python (Pandas, NumPy)</span>
+                  <span class="prof-pct">90%</span>
+                </div>
+                <div class="prof-bar-bg">
+                  <div class="prof-bar-fill" data-width="90"></div>
+                </div>
+              </div>
+              <div class="prof-item">
+                <div class="prof-header">
+                  <span class="prof-name">SQL &amp; Database Querying</span>
+                  <span class="prof-pct">85%</span>
+                </div>
+                <div class="prof-bar-bg">
+                  <div class="prof-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="prof-item">
+                <div class="prof-header">
+                  <span class="prof-name">Machine Learning (scikit-learn, PyTorch)</span>
+                  <span class="prof-pct">80%</span>
+                </div>
+                <div class="prof-bar-bg">
+                  <div class="prof-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="prof-item">
+                <div class="prof-header">
+                  <span class="prof-name">Data Visualisation (Matplotlib, Seaborn)</span>
+                  <span class="prof-pct">85%</span>
+                </div>
+                <div class="prof-bar-bg">
+                  <div class="prof-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="prof-item">
+                <div class="prof-header">
+                  <span class="prof-name">Power BI / Tableau</span>
+                  <span class="prof-pct">75%</span>
+                </div>
+                <div class="prof-bar-bg">
+                  <div class="prof-bar-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="prof-item">
+                <div class="prof-header">
+                  <span class="prof-name">Statistical Modelling &amp; EDA</span>
+                  <span class="prof-pct">82%</span>
+                </div>
+                <div class="prof-bar-bg">
+                  <div class="prof-bar-fill" data-width="82"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <section class="section" id="contact">
-         <div class="container">
-           <h2>Contact</h2>
-           <p>Have an opportunity or just want to say hi? I'd love to hear from you.</p>
-           <div class="cta">
-             <a class="btn" href="https://www.linkedin.com/in/parth-viradiya-554360250" target="_blank" rel="noreferrer noopener"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.327-.025-3.037-1.85-3.037-1.853 0-2.135 1.447-2.135 2.943v5.663H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.001-4.124 2.062 2.062 0 01-.001 4.124zM6.941 20.452H3.732V9h3.209v11.452z"/></svg></span><span>LinkedIn</span></a>
-           </div>
-           <div class="contact-row">
-             <a class="contact-item" href="mailto:parthvir64@gmail.com?subject=Hello%20Parth%20Viradiya&body=Hi%20Parth%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0A">
-               <span class="icon" aria-hidden="true">
-                 <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-.25a.75.75 0 0 0-.75.75v.26l8 5.04 8-5.04V7.25a.75.75 0 0 0-.75-.75H4.75Zm15.5 3.27-7.5 4.73a.75.75 0 0 1-.8 0L4.5 9.77v7.48c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V9.77Z"/></svg>
-               </span>
-               <span>parthvir64@gmail.com</span>
-             </a>
-             <a class="contact-item" href="tel:+917600514488">
-               <span class="icon" aria-hidden="true">
-                 <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C11.07 21 3 12.93 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.28.19 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
-               </span>
-               <span>+91 7600514488</span>
-             </a>
-           </div>
-         </div>
-       </section>
-     </main>
- 
-     <footer class="site-footer">
-       <div class="container">
-         <p>© <span id="year"></span> Parth Viradiya. All rights reserved.</p>
-       </div>
-     </footer>
- 
-     <script src="script.js"></script>
-   </body>
- </html>
+        <!-- Soft Skills marquee -->
+        <p class="skills-subtitle" style="margin-top:40px">// soft skills</p>
+        <div class="skills-marquee" aria-label="Soft skills">
+          <div class="skills-content">
+            <span class="skill-badge"><span class="skill-badge-icon">🗣️</span>Communication</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🧩</span>Problem Solving</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🤝</span>Teamwork</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🎯</span>Leadership</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🧠</span>Critical Thinking</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🔄</span>Adaptability</span>
+            <span class="skill-badge"><span class="skill-badge-icon">⏱️</span>Time Management</span>
+            <span class="skill-badge"><span class="skill-badge-icon">📢</span>Presentation</span>
+            <span class="skill-badge"><span class="skill-badge-icon">📊</span>Data Storytelling</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🔍</span>Attention to Detail</span>
+            <!-- duplicate for seamless loop -->
+            <span class="skill-badge"><span class="skill-badge-icon">🗣️</span>Communication</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🧩</span>Problem Solving</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🤝</span>Teamwork</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🎯</span>Leadership</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🧠</span>Critical Thinking</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🔄</span>Adaptability</span>
+            <span class="skill-badge"><span class="skill-badge-icon">⏱️</span>Time Management</span>
+            <span class="skill-badge"><span class="skill-badge-icon">📢</span>Presentation</span>
+            <span class="skill-badge"><span class="skill-badge-icon">📊</span>Data Storytelling</span>
+            <span class="skill-badge"><span class="skill-badge-icon">🔍</span>Attention to Detail</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ── Education ─────────────────────────────────────── -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <h2>Education</h2>
+          <span class="tag">history.log</span>
+          <span class="section-line"></span>
+        </div>
+        <div class="edu-timeline">
+          <article class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <h3>B.E. Computer Engineering</h3>
+                <span class="edu-grade-yellow">7.16 CGPA</span>
+              </div>
+              <p class="meta"><span>2022–2026</span> LDRP Institute of Engineering &amp; Technology, Gandhinagar</p>
+            </div>
+          </article>
+          <article class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <h3>12th Grade (Science)</h3>
+                <span class="edu-grade-yellow">72.33%</span>
+              </div>
+              <p class="meta"><span>2022</span> Shri Swaminarayan Gurukul, Sarangpur, Botad</p>
+            </div>
+          </article>
+          <article class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <h3>10th Grade</h3>
+                <span class="edu-grade-yellow">82.33%</span>
+              </div>
+              <p class="meta"><span>2020</span> Shri Swaminarayan Gurukul, Memnagar, Ahmedabad</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- ── Contact ───────────────────────────────────────── -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <span class="tag">connect.sh</span>
+          <span class="section-line"></span>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-text">
+            <h3>Let's Build Something with Data</h3>
+            <p>Have a data challenge, an analytics opportunity, or just want to talk shop? I'd love to connect. Reach
+              out via any channel below.</p>
+            <div class="contact-links">
+              <a class="contact-link-card"
+                href="mailto:parthvir64@gmail.com?subject=Hello%20Parth%20Viradiya&body=Hi%20Parth%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0A">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-.25a.75.75 0 0 0-.75.75v.26l8 5.04 8-5.04V7.25a.75.75 0 0 0-.75-.75H4.75Zm15.5 3.27-7.5 4.73a.75.75 0 0 1-.8 0L4.5 9.77v7.48c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V9.77Z" />
+                  </svg>
+                </div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">email</span>
+                  <span class="contact-link-value">parthvir64@gmail.com</span>
+                </div>
+              </a>
+              <a class="contact-link-card" href="tel:+917600514488">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C11.07 21 3 12.93 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.28.19 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z" />
+                  </svg>
+                </div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">phone</span>
+                  <span class="contact-link-value">+91 7600514488</span>
+                </div>
+              </a>
+              <a class="contact-link-card" href="https://www.linkedin.com/in/parth-viradiya-554360250" target="_blank"
+                rel="noreferrer noopener">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.327-.025-3.037-1.85-3.037-1.853 0-2.135 1.447-2.135 2.943v5.663H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.001-4.124 2.062 2.062 0 01-.001 4.124zM6.941 20.452H3.732V9h3.209v11.452z" />
+                  </svg>
+                </div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">linkedin</span>
+                  <span class="contact-link-value">parth-viradiya-554360250</span>
+                </div>
+              </a>
+              <a class="contact-link-card" href="https://github.com/Parth951" target="_blank" rel="noreferrer noopener">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">github</span>
+                  <span class="contact-link-value">github.com/Parth951</span>
+                </div>
+              </a>
+            </div>
+          </div>
 
+          <!-- Terminal availability card -->
+          <div class="availability-card">
+            <div class="terminal-bar">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">parth@portfolio ~ status.sh</span>
+            </div>
+            <div class="terminal-body">
+              <span class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">python status.py --check
+                  availability</span></span>
+              <span class="t-line t-output"><span class="highlight">Checking availability...</span></span>
+              <span class="t-line t-output">Status: <span class="success">OPEN TO WORK ✓</span></span>
+              <span class="t-line t-output">Role: <span class="highlight">Data Analyst / Data Scientist</span></span>
+              <span class="t-line t-output">Location: <span class="highlight">Ahmedabad, India 🇮🇳</span></span>
+              <span class="t-line t-output">Remote: <span class="success">Yes ✓</span></span>
+              <br>
+              <span class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">python skills.py --list
+                  top</span></span>
+              <span class="t-line t-output">Top skills: <span class="highlight">Python, SQL, ML, EDA</span></span>
+              <span class="t-line t-output">Experience: <span class="warn">6 Months (Internship)</span></span>
+              <span class="t-line t-output">Response time: <span class="success">&lt; 24 hours</span></span>
+              <br>
+              <span class="t-line"><span class="t-prompt">$ </span><span class="t-cursor"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="year"></span> <span>Parth Viradiya</span>. All rights reserved.</p>
+      <div class="footer-status">
+        <span class="status-dot"></span>
+        <span>Open to opportunities</span>
+      </div>
+    </div>
+  </footer>
 
+  <script src="script.js"></script>
+</body>
 
-
-
-
+</html>
